@@ -48,6 +48,7 @@ spotify-tracks/
 ├── .gitignore                      # Git ignore rules
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # Project documentation & findings
+├── app.py                          # 🎵 Streamlit Interactive Dashboard
 ├── spotify-tracks-dataset.csv      # Input dataset (~114K tracks)
 ├── spotify_bda_project.py          # Main PySpark analysis script
 └── output_charts/                  # Generated visualizations
@@ -88,7 +89,13 @@ spotify-tracks/
 pip install -r requirements.txt
 ```
 
-### 2. Run the Analysis
+### 2. Launch the Streamlit Interactive Dashboard
+```bash
+streamlit run app.py
+```
+> Access in your browser at `http://localhost:8501`.
+
+### 3. Run the PySpark Batch Analysis
 ```bash
 python spotify_bda_project.py
 ```
